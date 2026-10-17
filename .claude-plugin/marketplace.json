@@ -1,0 +1,12 @@
+{
+  "name": "claude-aidlc",
+  "owner": { "name": "Tijo Thomas", "url": "https://github.com/tijo-thomaz" },
+  "plugins": [
+    {
+      "name": "aidlc",
+      "source": "./",
+      "description": "AI-Driven Development Lifecycle: gated phases, 19 specialist agents, automated coding gates, patterns, self-heal and RCA.",
+      "version": "1.0.0"
+    }
+  ]
+}
