@@ -1,5 +1,6 @@
 {
   "name": "claude-aidlc",
+  "description": "AI-DLC: a gated, standards-backed AI-driven development lifecycle for Claude Code.",
   "owner": { "name": "Tijo Thomas", "url": "https://github.com/tijo-thomaz" },
   "plugins": [
     {

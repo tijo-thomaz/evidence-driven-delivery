@@ -31,10 +31,13 @@ AI-DLC encodes those practices into Claude Code so every project produces the ev
 ## Install
 
 **As a Claude Code plugin (recommended)**
+```bash
+claude plugin marketplace add tijo-thomaz/claude-aidlc
+claude plugin install aidlc@claude-aidlc
 ```
-/plugin marketplace add tijo-thomaz/claude-aidlc
-/plugin install aidlc@claude-aidlc
-```
+Or from inside a session: `/plugin marketplace add tijo-thomaz/claude-aidlc`, then `/plugin install aidlc@claude-aidlc`.
+Update later with `claude plugin update aidlc@claude-aidlc`. With a plugin install the skill is namespaced, so the
+commands below start with `/aidlc:aidlc` instead of `/aidlc`.
 
 **Manual install**
 ```bash
