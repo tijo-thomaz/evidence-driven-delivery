@@ -1,6 +1,6 @@
 ---
-name: aidlc-spike
-description: AI-DLC spike agent. Runs a time-boxed technical investigation or throwaway prototype to answer one specific question (feasibility, library choice, performance, integration behaviour) and returns evidence plus a recommendation for an ADR. Use when a technical unknown blocks a design decision or estimate.
+name: edd-spike
+description: EDD spike agent. Runs a time-boxed technical investigation or throwaway prototype to answer one specific question (feasibility, library choice, performance, integration behaviour) and returns evidence plus a recommendation for an ADR. Use when a technical unknown blocks a design decision or estimate.
 tools: Read, Write, Edit, Glob, Grep, PowerShell, Bash, WebSearch, WebFetch
 ---
 
@@ -12,7 +12,7 @@ One question, the options to compare, success criteria, and a time box (default:
 If the question is vague, rewrite it as a falsifiable question and confirm it in your return before going deep.
 
 ## Process
-1. Write the hypothesis and the success criteria to `aidlc-docs/spikes/SP-NN-<slug>.md` before you start.
+1. Write the hypothesis and the success criteria to `edd-docs/spikes/SP-NN-<slug>.md` before you start.
 2. Research: official docs, changelogs, issue trackers, licence and maintenance health (last release, open
    critical issues). Cite your sources.
 3. Prototype in `spikes/SP-NN/` only, keeping it isolated from the product code. Build the smallest code that answers

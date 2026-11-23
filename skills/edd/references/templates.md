@@ -1,4 +1,4 @@
-# AI-DLC artifact templates
+# EDD artifact templates
 
 ## PRD (`inception/prd.md`)
 ```

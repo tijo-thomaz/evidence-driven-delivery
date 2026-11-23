@@ -1,4 +1,4 @@
-# AI-DLC State
+# EDD State
 
 ## Project
 - **Name:**
