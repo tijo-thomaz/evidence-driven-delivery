@@ -1,4 +1,4 @@
-# AI-DLC standards baseline
+# EDD standards baseline
 
 Each agent applies the standards relevant to its stage. Cite them in artifacts where a decision depends on them.
 

@@ -1,10 +1,10 @@
 {
-  "name": "aidlc",
-  "version": "1.0.0",
-  "description": "AI-Driven Development Lifecycle for Claude Code: a gated Inception -> Construction -> Operations workflow with 19 specialist agents, 14 automated coding gates, a patterns catalogue, self-healing and RCA loops, and standards-backed artifacts (ISO 25010, OWASP ASVS, NIST SSDF, GDPR, EU AI Act).",
+  "name": "edd",
+  "version": "2.0.0",
+  "description": "Evidence-Driven Delivery for Claude Code: a gated Inception -> Construction -> Operations workflow with 19 specialist agents, 14 automated coding gates, a patterns catalogue, self-healing and RCA loops, and standards-backed artifacts (ISO 25010, OWASP ASVS, NIST SSDF, GDPR, EU AI Act).",
   "author": { "name": "Tijo Thomas", "url": "https://github.com/tijo-thomaz" },
-  "homepage": "https://github.com/tijo-thomaz/claude-aidlc",
-  "repository": "https://github.com/tijo-thomaz/claude-aidlc",
+  "homepage": "https://github.com/tijo-thomaz/evidence-driven-delivery",
+  "repository": "https://github.com/tijo-thomaz/evidence-driven-delivery",
   "license": "MIT",
-  "keywords": ["sdlc", "ai-dlc", "agents", "architecture", "quality-gates", "devsecops", "claude-code"]
+  "keywords": ["sdlc", "evidence-driven", "agents", "architecture", "quality-gates", "devsecops", "claude-code"]
 }

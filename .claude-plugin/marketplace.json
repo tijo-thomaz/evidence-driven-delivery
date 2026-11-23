@@ -1,13 +1,13 @@
 {
-  "name": "claude-aidlc",
-  "description": "AI-DLC: a gated, standards-backed AI-driven development lifecycle for Claude Code.",
+  "name": "evidence-driven-delivery",
+  "description": "Evidence-Driven Delivery: a gated, standards-backed development lifecycle for Claude Code.",
   "owner": { "name": "Tijo Thomas", "url": "https://github.com/tijo-thomaz" },
   "plugins": [
     {
-      "name": "aidlc",
+      "name": "edd",
       "source": "./",
-      "description": "AI-Driven Development Lifecycle: gated phases, 19 specialist agents, automated coding gates, patterns, self-heal and RCA.",
-      "version": "1.0.0"
+      "description": "Evidence-Driven Delivery: gated phases, 19 specialist agents, automated coding gates, patterns, self-heal and RCA.",
+      "version": "2.0.0"
     }
   ]
 }

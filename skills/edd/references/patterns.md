@@ -1,4 +1,4 @@
-# AI-DLC patterns catalogue
+# EDD patterns catalogue
 
 **Rule:** A pattern is applied only when its *use when* condition is actually true in this project (YAGNI).
 Every artifact or unit that applies a pattern records it in a `## Patterns used` section:

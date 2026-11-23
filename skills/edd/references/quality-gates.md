@@ -1,10 +1,10 @@
-# AI-DLC quality gates
+# EDD quality gates
 
 A gate is a **pass/fail check backed by evidence** (command output, a report file). A gate never passes on an
 agent's opinion alone. Failed gates trigger the self-heal → RCA → human escalation loop described at the bottom.
 
-Project-specific commands and thresholds live in `aidlc-docs/gates.yml` (template at the end). The
-`aidlc-code-quality` agent creates it during the walking-skeleton unit (U-01) and keeps it current.
+Project-specific commands and thresholds live in `edd-docs/gates.yml` (template at the end). The
+`edd-code-quality` agent creates it during the walking-skeleton unit (U-01) and keeps it current.
 
 ## Phase gates (human approval required)
 | Gate | After stage | Pass criteria |
@@ -47,9 +47,9 @@ Project-specific commands and thresholds live in `aidlc-docs/gates.yml` (templat
 A SonarQube/SonarCloud quality gate with the same thresholds is an acceptable substitute for CG5–CG8.
 
 ## Failure handling loop
-1. A gate fails → `aidlc-self-heal` fixes it, with at most **3 attempts** per gate. It may not loosen thresholds,
+1. A gate fails → `edd-self-heal` fixes it, with at most **3 attempts** per gate. It may not loosen thresholds,
    skip or delete tests, or add ignore/suppress comments without stating the reason.
-2. Still failing, or the same gate failed in 2 different units → `aidlc-rca` runs a root-cause analysis and proposes
+2. Still failing, or the same gate failed in 2 different units → `edd-rca` runs a root-cause analysis and proposes
    a systemic fix (code, design, gate config or process).
 3. The RCA fix needs a design change or a threshold change → escalate to the user. A waiver is recorded in
    `audit.md` with an owner and an expiry date.
@@ -69,9 +69,9 @@ gates:
   CG8_duplication:  { cmd: "npx jscpd src --threshold 3" }
   CG9_architecture: { cmd: "npx depcruise src --validate" }
   CG10_security:    { cmd: "npx semgrep --config auto --error && npx osv-scanner -r . && gitleaks detect" }
-  CG11_robustness:  { review: aidlc-robustness }
+  CG11_robustness:  { review: edd-robustness }
   CG12_performance: { cmd: "k6 run perf/smoke.js", p95_ms: 300, applies_to: [U-03] }
   CG13_ai_evals:    { cmd: "npm run evals", min_pass: 0.9 }
-  CG14_docs:        { review: aidlc-code-quality }
+  CG14_docs:        { review: edd-code-quality }
 waivers: []   # { gate, unit, reason, owner, expires, audit_ref }
 ```
